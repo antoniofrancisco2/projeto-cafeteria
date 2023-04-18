@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+    --cor1: #9C6644;
+    --cor2: #7F5539;
+    --cor3: #B08968;
+    --cor4: #DDB892;
+    --cor5: #E6CCB2;
+    --cor6: #EDE0D4;
+
+    --font01: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+cabeçalho
+*/
+
+header img#ima {
+    margin-top: -30px;
+    position: absolute;
+    height: 116px;
+}
+
+header {
+    background-color: var(--cor1);
+    box-shadow: inset 0px -4px 6px rgba(17, 17, 17, 0.288);
+    background-image: url('../imagem/logo-remove.png');
+    height: 60px;
+}
+
+nav {
+    text-align: right;
+    padding: 30px;
+    padding-top: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
+    color: white;
+    font-size: 1.2em;
+    padding: 8px;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    border-radius: 10px;
+    text-decoration: underline;
+}
+/*
+
+*/
+section.inicio {
+    background-image: url('../imagem/jovem-comendo-croissants-em-um-cafe.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 700px;
+}
+
+h1#txtimg {
+    text-align: center;
+    margin: auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
+    font-family: var(--font01);
+    font-weight: bold;
+    font-size: 4vw;
+    color: white;
+}
+
+section.normal {
+    background-color: var(--cor5);
+    text-align: center;
+    font-weight: bold;
+    height: 266px;
+}
+
+section.normal p {
+    padding: 50px;
+}
+
+section#img1 {
+    background-image: url('../imagem/resumo-borrao-e-defocused-restaurante-e-cafeteria-cafe-interior.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+    height: 615px;
+}
+
+section#img2 {
+    background-image: url('../imagem/pequeno-grupo-de-amigos-tomando-cafe-e-se-comunicando.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+    height: 615px;
+}
+
+
+footer {
+    background-color: #3b281b;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
