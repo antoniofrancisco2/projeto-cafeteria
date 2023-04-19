@@ -34,7 +34,9 @@ header {
     background-image: url('../imagem/logo-remove.png');
     height: 60px;
 }
-
+/*
+NAVEGACAO
+*/
 nav {
     text-align: right;
     padding: 30px;
@@ -56,7 +58,7 @@ nav a:hover {
     text-decoration: underline;
 }
 /*
-
+TEXTOS E IMAGENS
 */
 section.inicio {
     background-image: url('../imagem/jovem-comendo-croissants-em-um-cafe.jpg');
@@ -103,7 +105,9 @@ section#img2 {
     height: 615px;
 }
 
-
+/*
+RODA PE
+*/
 footer {
     background-color: #3b281b;
     text-align: center;
