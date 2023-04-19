@@ -76,15 +76,13 @@ h1#txtimg {
     color: white;
 }
 
-section.normal {
-    background-color: var(--cor5);
-    text-align: center;
-    font-weight: bold;
-    height: 266px;
-}
-
 section.normal p {
-    padding: 50px;
+    background-color: var(--cor5);
+    box-shadow: inset 0px -4px 10px rgba(39, 38, 38, 0.404);
+    font-size: 2vw;
+    font-weight: bold;
+    height: 35vw;
+    padding: 100px;
 }
 
 section#img1 {
@@ -92,6 +90,7 @@ section#img1 {
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
+    box-shadow: inset 0px 0px 22px rgba(0, 0, 0, 0.397);
     height: 615px;
 }
 
@@ -100,6 +99,7 @@ section#img2 {
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
+    box-shadow: inset 0px 0px 22px rgba(0, 0, 0, 0.397);
     height: 615px;
 }
 
