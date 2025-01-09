@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Primeira Seção */
+.primeira-secao {
+    background-color: #604829;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.primeira-secao img {
+    width: 70px;
+    left: 10%;
+    position: relative;
+}
+
+.primeira-secao div a {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 3px 5px 2px #000000;
+    letter-spacing: 2px;
+    color: #c4a47c;
+}
+
+.primeira-secao div {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+/* Segunda Seção*/
+.secao-banner {
+    background-image: url('../img/parallax-imagem1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.secao-banner-part2 {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.secao-banner h1 {
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    font-size: 70px;
+    margin: 0 auto;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    font-weight: normal;
+}
+
+/* Seção Informações */
+.secao-informacoes {
+    text-align: center;
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.secao-informacoes h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #c4a47c;
+    padding-bottom: 25px;
+}
+
+.secao-informacoes p {
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 0 auto;
+    line-height: 35px;
+}
+
+/* Seção Informações - Imagens */
+.paralax-2 {
+    background-image: url('../img/parallax-imagem2.jpg');
+}
+
+.paralax-3 {
+    background-image: url('../img/parallax-imagem3.jpg');
+}
+
+.efeito-paralax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.efeito-paralax-part2 {
+    height: 50vh;
+}
+
+.efeito-paralax-part2 h3 {
+    background-color: #604829;
+    font-family: 'Fraunces', serif;
+    color: #fff;
+    width: 350px;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Seção Contatos */
+.secao-contatos {
+    background-image: url('../img/parallax-imagem4.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+    position: relative;
+}
+
+.secao-contatos h2 {
+    background-color: #604829;
+    font-family: 'Fraunces', serif;
+    color: #fff;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+}
+
+.secao-contatos .secao-contatos-rodape {
+    background-color: #604829;
+    font-family: 'Fraunces', serif;
+    text-shadow: 3px 3px 10px black;
+    color: #fff;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+iframe {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1024px;
+    height: 450px;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+/* Seção Horários */
+.secao-horarios {
+    background-image: url('../img/cafeteria.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    position: relative;
+}
+
+.secao-horarios h2 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+}
+
+.lista {
+    font-family: 'Fraunces', serif;
+    width: 768px;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.lista li {
+    position: relative;
+}
+
+.lista li div {
+    width: 70%;
+    height: 1px;
+    background-color: #acacac;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 50%;
+    margin: 0 auto;
+}
+
+.lista li p {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.secao-horarios span {
+    color: #c4a47c;
+}
+
+.secao-horarios p {
+    color: #ACACAC;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .lista {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .secao-horarios h2 {
+        font-size: 24px;
+        top: 10%;
+    }
+
+    .lista li p {
+        text-align: center;
+    }
+
+    .lista li div {
+        width: 56%;
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    .secao-horarios h2 {
+        font-size: 20px;
+        top: 5%;
+    }
+
+    .lista {
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .lista li p {
+        text-align: center;
+    }
+
+    .lista li div {
+        width: 56%;
+    }
+
+}
+
+
+/* Seção Rodapé */
+.secao-rodape {
+    padding: 20px 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 16px;
+    position: relative;
+}
+
+.secao-rodape span {
+    color: #c4a47c;
+}
+
+.secao-rodape a {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 90px;
+    right: 50px;
+}
+
+.secao-rodape img {
+    background-color: #c4a47c;
+    border-radius: 6px;
+}
