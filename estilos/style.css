@@ -4,18 +4,20 @@
     margin: 0;
 }
 
-/* Primeira Seção */
+/* Estilo inicial do menu */
 .primeira-secao {
     background-color: #604829;
     width: 100%;
     position: fixed;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .primeira-secao img {
     width: 70px;
-    left: 10%;
-    position: relative;
 }
 
 .primeira-secao div a {
@@ -29,11 +31,104 @@
     color: #c4a47c;
 }
 
-.primeira-secao div {
+/* Menu no desktop: sempre visível */
+.menu-container {
+    display: flex; /* No desktop, o menu será sempre visível */
     position: absolute;
     top: 35%;
     right: 15%;
 }
+
+/* Menu responsivo - Esconde no mobile */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        position: absolute;
+        top: 50px;
+        right: -100%; /* Começa fora da tela */
+        flex-direction: column;
+        background-color: #604829;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        transition: right 0.3s ease-in-out; /* Animação para mover o menu */
+    }
+
+    .menu-container a {
+        margin: 10px 0;
+    }
+
+    .menu-container.open {
+        right: 0; /* Quando o menu estiver aberto, ele vai vir para a posição 0 */
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 3px;
+        background-color: #c4a47c;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .hamburger:before,
+    .hamburger:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #c4a47c;
+        transition: all 0.3s;
+    }
+
+    .hamburger:before {
+        top: -8px;
+    }
+
+    .hamburger:after {
+        top: 8px;
+    }
+
+    .hamburger.open:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .hamburger.open:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .hamburger.open {
+        background-color: transparent;
+    }
+}
+
+/* No desktop, o "hamburguer" não deve ser exibido */
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* Esconde o ícone de hambúrguer */
+    }
+
+    .menu-container {
+        position: relative;
+        right: initial;
+        background-color: transparent;
+        flex-direction: row; /* Exibe os links de forma horizontal */
+        padding: 0;
+    }
+
+    .menu-container a {
+        margin: 0 20px;
+    }
+}
+
+
+
 
 /* Segunda Seção*/
 .secao-banner {
@@ -174,16 +269,21 @@ iframe {
 }
 
 @media (max-width: 768px) {
+
+    .secao-contatos .secao-contatos-rodape {
+        width: 100%;
+    }
+
     iframe {
-        width: 450px;
-        height: 300px;
+        width: 100%;
+        height: 350px;
     }
 }
 
 @media (max-width: 480px) {
     iframe {
-        width: 200px;
-        height: 100px;
+        width: 100%;
+        height: 350px;
     }
 }
 
@@ -316,7 +416,7 @@ iframe {
     position: absolute;
     width: 60px;
     height: 60px;
-    bottom: 90px;
+    bottom: 120px;
     right: 50px;
 }
 
