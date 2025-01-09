@@ -159,6 +159,12 @@
     font-weight: normal;
 }
 
+@media screen and (max-width: 768px) {
+    .secao-banner h1 {
+        font-size: 42px;
+    }
+}
+
 /* Seção Informações */
 .secao-informacoes {
     text-align: center;
