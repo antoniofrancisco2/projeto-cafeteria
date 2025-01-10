@@ -361,7 +361,7 @@ iframe {
 @media (max-width: 768px) {
     .lista {
         width: 90%;
-        font-size: 12px;
+        font-size: 25px;
     }
 
     .secao-horarios h2 {
@@ -381,7 +381,7 @@ iframe {
 /* Responsividade para telas muito pequenas */
 @media (max-width: 480px) {
     .secao-horarios h2 {
-        font-size: 20px;
+        font-size: 25px;
         top: 5%;
     }
 
